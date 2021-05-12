@@ -31,3 +31,13 @@ Continuous testing
 ==================
 
 The test suite (:mod:`message_ix_models.tests`) is run using GitHub Actions for new commits on the ``main`` branch, or on any branch associated with a pull request.
+
+
+Prepare data for testing
+========================
+
+Use the ``export-test-data`` CLI command::
+
+  mix-models --url="ixmp://ixmp-dev/ENGAGE_SSP2_v4.1.7/baseline" export-test-data
+
+See the documentation for :func:`export_test_data`.
